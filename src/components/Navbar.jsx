@@ -9,7 +9,6 @@ import { TooltipComponent } from '@syncfusion/ej2-react-popups';
 import avatar from '../data/avatar.jpg';
 import { Cart, Chat, Notification, UserProfile } from '.';
 import { useStateContext } from '../contexts/ContextProvider';
-import { click } from '@testing-library/user-event/dist/click';
 
 const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
   <TooltipComponent content={title} position='BottomCenter'>
@@ -21,7 +20,7 @@ const NavButton = ({ title, customFunc, icon, color, dotColor }) => (
 )
 
 const Navbar = () => {
-  const { activeMenu, setActiveMenu, isClicked, setIsClicked, handleClick, screenSize, setScreenSize } = useStateContext();
+  const { activeMenu, setActiveMenu, isClicked, handleClick, screenSize, setScreenSize } = useStateContext();
 
   useEffect(() => {
     const handleResize = () => setScreenSize(window.innerWidth);

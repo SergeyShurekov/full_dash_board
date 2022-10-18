@@ -1,14 +1,14 @@
 import React from 'react';
-import { AiOutlineCalendar, AiOutlineShoppingCart, AiOutlineAreaChart, AiOutlineBarChart, AiOutlineStock } from 'react-icons/ai';
-import { FiShoppingBag, FiEdit, FiPieChart, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
-import { BsKanban, BsBarChart, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
-import { BiColorFill } from 'react-icons/bi';
+import { AiOutlineCalendar, AiOutlineShoppingCart, } from 'react-icons/ai';
+import { FiShoppingBag, FiEdit, FiBarChart, FiCreditCard, FiStar, FiShoppingCart } from 'react-icons/fi';
+import { BsKanban, BsBoxSeam, BsCurrencyDollar, BsShield, BsChatLeft } from 'react-icons/bs';
+// import { BiColorFill } from 'react-icons/bi';
 import { IoMdContacts } from 'react-icons/io';
-import { RiContactsLine, RiStockLine } from 'react-icons/ri';
+import { RiContactsLine } from 'react-icons/ri';
 import { MdOutlineSupervisorAccount } from 'react-icons/md';
 import { HiOutlineRefresh } from 'react-icons/hi';
 import { TiTick } from 'react-icons/ti';
-import { GiLouvrePyramid } from 'react-icons/gi';
+// import { GiLouvrePyramid } from 'react-icons/gi';
 import { GrLocation } from 'react-icons/gr';
 import avatar from './avatar.jpg';
 import avatar2 from './avatar2.jpg';
@@ -21,7 +21,6 @@ import product4 from './product4.jpg';
 import product5 from './product5.jpg';
 import product6 from './product6.jpg';
 import product7 from './product7.jpg';
-import product8 from './product8.jpg';
 
 export const gridOrderImage = (props) => (
   <div>
@@ -510,9 +509,11 @@ export const employeesGrid = [
 export const links = [
   {
     title: 'Dashboard',
+    title_ru: 'Панель',
     links: [
       {
         name: 'ecommerce',
+        name_ru: 'Финансы',
         icon: <FiShoppingBag />,
       },
     ],
@@ -520,77 +521,43 @@ export const links = [
 
   {
     title: 'Pages',
+    title_ru: 'Страницы',
     links: [
       {
         name: 'orders',
+        name_ru: 'Заказы',
         icon: <AiOutlineShoppingCart />,
       },
       {
         name: 'employees',
+        name_ru: 'Сотрудники',
         icon: <IoMdContacts />,
       },
       {
         name: 'customers',
+        name_ru: 'Клиенты',
         icon: <RiContactsLine />,
       },
     ],
   },
   {
     title: 'Apps',
+    title_ru: 'Аплеты',
     links: [
       {
         name: 'calendar',
+        name_ru: 'Календарь',
         icon: <AiOutlineCalendar />,
       },
       {
         name: 'kanban',
+        name_ru: 'Задачи',
         icon: <BsKanban />,
       },
       {
         name: 'editor',
+        name_ru: 'Редактор',
         icon: <FiEdit />,
-      },
-      {
-        name: 'color-picker',
-        icon: <BiColorFill />,
-      },
-    ],
-  },
-  {
-    title: 'Charts',
-    links: [
-      {
-        name: 'line',
-        icon: <AiOutlineStock />,
-      },
-      {
-        name: 'area',
-        icon: <AiOutlineAreaChart />,
-      },
-
-      {
-        name: 'bar',
-        icon: <AiOutlineBarChart />,
-      },
-      {
-        name: 'pie',
-        icon: <FiPieChart />,
-      },
-      {
-        name: 'financial',
-        icon: <RiStockLine />,
-      },
-      {
-        name: 'color-mapping',
-        icon: <BsBarChart />,
-      },
-      {
-        name: 'pyramid',
-        icon: <GiLouvrePyramid />,
-      },
-      {
-        name: 'stacked',
-        icon: <AiOutlineBarChart />,
       },
     ],
   },
@@ -600,23 +567,23 @@ export const cartData = [
   {
     image:
       product5,
-    name: 'butterscotch ice-cream',
-    category: 'Milk product',
-    price: '$250',
+    name: 'Сливочное мороженое',
+    category: 'Молочные продукты',
+    price: '250 руб.',
   },
   {
     image:
       product6,
-    name: 'Supreme fresh tomato',
-    category: 'Vegetable Item',
-    price: '$450',
+    name: 'Помидоры свежие',
+    category: 'Овощи',
+    price: '450 руб.',
   },
   {
     image:
       product7,
-    name: 'Red color candy',
-    category: 'Food Item',
-    price: '$190',
+    name: 'конфеты Красные',
+    category: 'Конфеты',
+    price: '190 руб.',
   },
 ];
 
@@ -624,30 +591,30 @@ export const chatData = [
   {
     image:
       avatar2,
-    message: 'Roman Joined the Team!',
-    desc: 'Congratulate him',
-    time: '9:08 AM',
+    message: 'Кнам присоединился Роман!',
+    desc: 'Поприветствуйте...',
+    time: '9:08',
   },
   {
     image:
       avatar3,
-    message: 'New message received',
-    desc: 'Salma sent you new message',
-    time: '11:56 AM',
+    message: 'Новое сообщение',
+    desc: 'Новое сообщение от Саши',
+    time: '11:56',
   },
   {
     image:
       avatar4,
-    message: 'New Payment received',
-    desc: 'Check your earnings',
-    time: '4:39 AM',
+    message: 'Поступление на Ваш счёт',
+    desc: 'Проверьте счёт',
+    time: '16:39',
   },
   {
     image:
       avatar,
-    message: 'Jolly completed tasks',
-    desc: 'Assign her new tasks',
-    time: '1:12 AM',
+    message: 'Женя выполнил задание',
+    desc: 'Ожидает новое задание',
+    time: '13:12',
   },
 ];
 
@@ -886,22 +853,22 @@ export const themeColors = [
 export const userProfileData = [
   {
     icon: <BsCurrencyDollar />,
-    title: 'My Profile',
-    desc: 'Account Settings',
+    title: 'Профиль',
+    desc: 'Настройки профиля',
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
   },
   {
     icon: <BsShield />,
-    title: 'My Inbox',
-    desc: 'Messages & Emails',
+    title: 'Входящие',
+    desc: 'Сообщения и почта',
     iconColor: 'rgb(0, 194, 146)',
     iconBg: 'rgb(235, 250, 242)',
   },
   {
     icon: <FiCreditCard />,
-    title: 'My Tasks',
-    desc: 'To-do and Daily Tasks',
+    title: 'Мои задачи',
+    desc: 'Ежедневные задания и напоминания',
     iconColor: 'rgb(255, 244, 229)',
     iconBg: 'rgb(254, 201, 15)',
   },
@@ -1006,7 +973,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1020,7 +987,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1076,7 +1043,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1090,7 +1057,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1146,7 +1113,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1160,7 +1127,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1216,7 +1183,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1230,7 +1197,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1286,7 +1253,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1300,7 +1267,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1356,7 +1323,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1370,7 +1337,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1426,7 +1393,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1440,7 +1407,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -1495,7 +1462,7 @@ export const customersData = [
     CustomerName: 'Christopher Jamil',
     CustomerEmail: 'jamil@gmail.com',
     ProjectName: 'MedicalPro WP Theme',
-    Status: 'Completed',
+    Status: 'Выполнен',
     CustomerImage:
       avatar,
     StatusBg: '#8BE78B',
@@ -1508,7 +1475,7 @@ export const customersData = [
     CustomerName: 'Michael',
     CustomerEmail: 'michael@gmail.com',
     ProjectName: 'Weekly WP Theme',
-    Status: 'Cancel',
+    Status: 'Отмена',
     CustomerImage:
       avatar2,
     StatusBg: 'red',
@@ -2178,7 +2145,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Butter Scotch',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2200,7 +2167,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Night Lamp',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2222,7 +2189,7 @@ export const ordersData = [
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2244,7 +2211,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
     Location: 'USA',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2266,7 +2233,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2288,7 +2255,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
@@ -2299,7 +2266,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2322,7 +2289,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Butter Scotch',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2344,7 +2311,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Night Lamp',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2366,7 +2333,7 @@ export const ordersData = [
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2388,7 +2355,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
     Location: 'USA',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2410,7 +2377,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2432,7 +2399,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
@@ -2443,7 +2410,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2466,7 +2433,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Butter Scotch',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2488,7 +2455,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Night Lamp',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2510,7 +2477,7 @@ export const ordersData = [
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2532,7 +2499,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
     Location: 'USA',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2554,7 +2521,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2576,7 +2543,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
@@ -2587,7 +2554,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2610,7 +2577,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Butter Scotch',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2632,7 +2599,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Night Lamp',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2654,7 +2621,7 @@ export const ordersData = [
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2676,7 +2643,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
     Location: 'USA',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2698,7 +2665,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2720,7 +2687,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
@@ -2731,7 +2698,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2754,7 +2721,7 @@ export const ordersData = [
     TotalAmount: 56.34,
     OrderItems: 'Butter Scotch',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product5,
@@ -2776,7 +2743,7 @@ export const ordersData = [
     TotalAmount: 93.31,
     OrderItems: 'Night Lamp',
     Location: 'Germany',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product4,
@@ -2798,7 +2765,7 @@ export const ordersData = [
     TotalAmount: 95.99,
     OrderItems: 'Makeup Lancome Rouge',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       product2,
@@ -2820,7 +2787,7 @@ export const ordersData = [
     TotalAmount: 59.99,
     OrderItems: 'Headphone',
     Location: 'USA',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       product4,
@@ -2842,7 +2809,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',
@@ -2864,7 +2831,7 @@ export const ordersData = [
     TotalAmount: 84.99,
     OrderItems: 'Pan Cake',
     Location: 'Delhi',
-    Status: 'complete',
+    Status: 'выполнен',
     StatusBg: '#8BE78B',
     ProductImage:
       'https://images.unsplash.com/photo-1576618148400-f54bed99fcfd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80',
@@ -2875,7 +2842,7 @@ export const ordersData = [
     TotalAmount: 122.99,
     OrderItems: 'Watch',
     Location: 'USA',
-    Status: 'canceled',
+    Status: 'отмена',
     StatusBg: '#FF5C8E',
     ProductImage:
       'https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/pop-womens-garmin-watches-1641919013.jpg?crop=0.502xw:1.00xh;0.250xw,0&resize=640:*',

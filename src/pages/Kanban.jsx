@@ -15,8 +15,6 @@ const Kanban = () => {
           )}
         </ColumnsDirective>
       </KanbanComponent>
-
-
     </div>
   )
 }

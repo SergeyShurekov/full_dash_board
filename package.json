@@ -8,6 +8,7 @@
     "@syncfusion/ej2-react-grids": "^20.2.49",
     "@syncfusion/ej2-react-kanban": "^20.3.47",
     "@syncfusion/ej2-react-popups": "^20.2.45",
+    "@syncfusion/ej2-react-richtexteditor": "^20.3.47",
     "@syncfusion/ej2-react-schedule": "^20.2.50",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.3.0",
@@ -23,6 +24,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "serve": "node server.js",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
